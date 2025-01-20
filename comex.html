@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solo Rico</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <style>
+/*topo das telas*/
+.page-header {
+    background: linear-gradient(to right, #3b7d1c, #6bbf34, #f7d51c);
+    height: 250px; /* Altura do banner */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+.page-banner {
+    background-image: url('assets/img/banner-about.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 250px; /* Ajuste conforme necessário */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+.container h2{padding-top: 30px;}
+
+/* Seção Sobre a Empresa */
+.about-section {
+    background-color: #f9f9f9;
+    padding: 90px 0;
+}
+
+.about-image {
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.about-list {
+    list-style: none;
+    padding: 0;
+    color: #333;
+}
+
+.about-list li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.about-list i {
+    color: #28a745;
+    margin-right: 8px;
+}
+
+/* Missão, Visão e Valores */
+.mission-vision-values .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.mission-vision-values .card:hover {
+    transform: scale(1.05);
+}
+
+.mission-vision-values .card-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.mission-vision-values .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Equipe */
+.team-section {
+    background-color: #ffffff;
+    padding: 60px 0;
+}
+
+.team-card {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+    transform: scale(1.05);
+}
+
+.team-image {
+    border-radius: 50%;
+    max-width: 150px;
+    margin-bottom: 15px;
+}
+
+.team-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.team-role {
+    font-size: 1rem;
+    color: #28a745;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .mission-vision-values .card {
+        margin-bottom: 20px;
+    }
+
+    .team-card {
+        margin-bottom: 20px;
+    }
+}
+
+
+    </style>
+</head>
+
+<body>
+    <!-- Barra Superior -->
+    <div class="top-bar text-center">
+        <span><a href="#"></a></span>
+    </div>
+   <!-- Navbar -->
+   <header class="navbar-section" style="padding-top: 30px;">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/logo.png" alt="Logo" class="navbar-logo">
+                <span class="navbar-subtitle"></span>
+            </a>
+            <!-- Botão de Menu Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+<!-- Links -->
+<div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+        <li class="nav-item"><a class="nav-link" href="empresa.html">A EMPRESA</a></li>
+        <li class="nav-item"><a class="nav-link" href="para-empresas.html">PARA EMPRESAS</a></li>
+        <li class="nav-item"><a class="nav-link" href="para-voce.html">PARA VOCÊ</a></li>
+        <li class="nav-item"><a class="nav-link" href="comex.html">COMEX</a></li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown3" data-bs-toggle="dropdown"
+                role="button" aria-expanded="false">
+                ATENDIMENTO
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown3">
+                <li><a class="dropdown-item" href="franqueado.html">SEJA UM FRANQUEADO</a></li>
+                <li><a class="dropdown-item" href="trabalhe-conosco.html">TRABALHE CONOSCO</a></li>
+                <li><a class="dropdown-item" href="sac.html">SAC</a></li>
+                <li><a class="dropdown-item" href="contatos.html">CONTATOS</a></li>
+            </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="blog.html">BLOG</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">LOJA</a></li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown3" data-bs-toggle="dropdown"
+                role="button" aria-expanded="false">
+                <img src="assets/img/Brazil.svg" alt="Brasil" class="navbar-flag"> Brasil
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Country 1</a></li>
+                <li><a class="dropdown-item" href="#">Country 2</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+        </li>
+    </ul>
+</div>
+</div>
+</nav>
+</header>
+    <!-- Cabeçalho -->
+    <!-- <header class="navbar navbar-expand-lg navbar-light">
+    </header> -->
+
+
+
+<!-- COMEX -->
+<!-- Cabeçalho da Página -->
+<section class="page-header">
+    <div class="container text-center">
+        <h1>COMEX - Comércio Exterior</h1>
+        <p>Conectando o Agro Brasileiro com o Mundo.</p>
+    </div>
+</section>
+
+<!-- Seção: Nossos Serviços -->
+<section class="services-section py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Texto -->
+            <div class="col-lg-6">
+                <h4 class="section-title">Nossos Serviços</h4>
+                <h2 class="section-heading">Facilitando o Comércio Internacional</h2>
+                <p class="section-description">
+                    A Solo Rico oferece soluções especializadas para exportação e importação de produtos agroindustriais,
+                    conectando produtores brasileiros a mercados globais com eficiência e segurança.
+                </p>
+                <ul class="services-list">
+                    <li><i class="fas fa-globe"></i> Exportação para diversos países</li>
+                    <li><i class="fas fa-shipping-fast"></i> Logística eficiente e segura</li>
+                    <li><i class="fas fa-handshake"></i> Parcerias estratégicas no exterior</li>
+                </ul>
+                <a href="#" class="btn btn-success mt-3">Saiba Mais</a>
+            </div>
+            <!-- Imagem -->
+            <div class="col-lg-6 text-center">
+                <img src="assets/img/comex-services.jpg" alt="Serviços COMEX" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Seção: Vantagens de Trabalhar Conosco -->
+<section class="advantages-section py-5 bg-light">
+    <div class="container text-center">
+        <h4 class="section-title">Por Que Escolher a Solo Rico?</h4>
+        <h2 class="section-heading">Vantagens de Trabalhar Conosco</h2>
+        <div class="row mt-4">
+            <!-- Vantagem 1 -->
+            <div class="col-md-4">
+                <div class="advantage-card">
+                    <img src="assets/img/advantage1.png" alt="Qualidade" class="advantage-icon">
+                    <h5 class="advantage-title">Qualidade Garantida</h5>
+                    <p class="advantage-description">Produtos certificados e reconhecidos internacionalmente.</p>
+                </div>
+            </div>
+            <!-- Vantagem 2 -->
+            <div class="col-md-4">
+                <div class="advantage-card">
+                    <img src="assets/img/advantage2.png" alt="Logística" class="advantage-icon">
+                    <h5 class="advantage-title">Logística Eficiente</h5>
+                    <p class="advantage-description">Soluções de transporte seguras e pontuais.</p>
+                </div>
+            </div>
+            <!-- Vantagem 3 -->
+            <div class="col-md-4">
+                <div class="advantage-card">
+                    <img src="assets/img/advantage3.png" alt="Atendimento" class="advantage-icon">
+                    <h5 class="advantage-title">Atendimento Personalizado</h5>
+                    <p class="advantage-description">Consultoria especializada para cada necessidade.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Seção: Parcerias Internacionais -->
+<section class="partners-section py-5">
+    <div class="container text-center">
+        <h4 class="section-title">Nossas Parcerias</h4>
+        <h2 class="section-heading">Parceiros de Negócio em Todo o Mundo</h2>
+        <div class="row mt-4">
+            <div class="col-md-3">
+                <img src="assets/img/partner1.png" alt="Parceiro 1" class="partner-logo img-fluid">
+            </div>
+            <div class="col-md-3">
+                <img src="assets/img/partner2.png" alt="Parceiro 2" class="partner-logo img-fluid">
+            </div>
+            <div class="col-md-3">
+                <img src="assets/img/partner3.png" alt="Parceiro 3" class="partner-logo img-fluid">
+            </div>
+            <div class="col-md-3">
+                <img src="assets/img/partner4.png" alt="Parceiro 4" class="partner-logo img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Seção: Contato -->
+<section class="contact-section py-5 text-center">
+    <div class="container">
+        <h2 class="section-heading text-white">Pronto para Expandir Seu Negócio?</h2>
+        <p class="text-white">Entre em contato com nossa equipe de COMEX e descubra como podemos ajudar você a conquistar novos mercados.</p>
+        <a href="contato.html" class="btn btn-light btn-lg mt-3">Fale Conosco</a>
+    </div>
+</section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer-section py-5">
+        <div class="container">
+            <!-- Logo e Descrição -->
+            <div class="row text-center mb-4">
+                <div class="col-12">
+                    <img src="assets/img/div.elementor-element.png" alt="Logo Solo Rico" class="footer-logo mb-3">
+                    <p class="footer-description mx-auto">
+                        There are many variations of passages of lorem ipsum available, but the majority suffered.
+                        <br> Atendimento a clientes, colaboradores e empresas de segunda a sexta-feira das 09h às 18h
+                        (exceto feriados).
+                    </p>
+                </div>
+            </div>
+
+            <!-- Menus e Informações -->
+            <div class="row">
+                <!-- Menu -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <h5 class="footer-heading">Menu</h5>
+                    <ul class="footer-menu list-unstyled">
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Menu</a></li>
+                    </ul>
+                </div>
+
+                <!-- Blog -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <h5 class="footer-heading">Blog</h5>
+                    <ul class="footer-blog list-unstyled">
+                        <li>
+                            <a href="#">Lorem Food Production Back To Cities</a>
+                            <span>Jul, 2025</span>
+                        </li>
+                        <li>
+                            <a href="#">Lorem Food Production Back To Cities</a>
+                            <span>Jan, 2025</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Atendimento -->
+                <div class="col-lg-4 col-md-12 col-12">
+                    <h5 class="footer-heading">Atendimento</h5>
+                    <ul class="footer-contact list-unstyled">
+                        <li><i class="fas fa-phone"></i> 555 888 0000</li>
+                        <li><i class="fas fa-envelope"></i> email@solorico.com.br</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Rua Lorem Ipsum, 1234<br>S. J. Rio Preto SP., Brasil
+                        </li>
+                    </ul>
+                    <form class="footer-form mt-3">
+                        <input type="text" class="form-control" placeholder="Dúvidas?">
+                        <button type="submit" class="btn btn-success"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-bottom text-center mt-4">
+                <p>&copy; All Copyright 2025 by Martinha TI</p>
+                <a href="#">Política e Privacidade</a> | <a href="#">Central de Atendimento</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

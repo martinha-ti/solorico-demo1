@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solo Rico</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <style>
+/*topo das telas*/
+.page-header {
+    background: linear-gradient(to right, #3b7d1c, #6bbf34, #f7d51c);
+    height: 250px; /* Altura do banner */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+.page-banner {
+    background-image: url('assets/img/banner-about.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 250px; /* Ajuste conforme necessário */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+.container h2{padding-top: 30px;}
+
+
+
+    </style>
+</head>
+
+<body>
+    <!-- Barra Superior -->
+    <div class="top-bar text-center">
+        <span><a href="#"></a></span>
+    </div>
+   <!-- Navbar -->
+   <header class="navbar-section" style="padding-top: 30px;">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/logo.png" alt="Logo" class="navbar-logo">
+                <span class="navbar-subtitle"></span>
+            </a>
+            <!-- Botão de Menu Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+<!-- Links -->
+<div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+        <li class="nav-item"><a class="nav-link" href="empresa.html">A EMPRESA</a></li>
+        <li class="nav-item"><a class="nav-link" href="para-empresas.html">PARA EMPRESAS</a></li>
+        <li class="nav-item"><a class="nav-link" href="para-voce.html">PARA VOCÊ</a></li>
+        <li class="nav-item"><a class="nav-link" href="comex.html">COMEX</a></li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown3" data-bs-toggle="dropdown"
+                role="button" aria-expanded="false">
+                ATENDIMENTO
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown3">
+                <li><a class="dropdown-item" href="franqueado.html">SEJA UM FRANQUEADO</a></li>
+                <li><a class="dropdown-item" href="trabalhe-conosco.html">TRABALHE CONOSCO</a></li>
+                <li><a class="dropdown-item" href="sac.html">SAC</a></li>
+                <li><a class="dropdown-item" href="contatos.html">CONTATOS</a></li>
+            </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="blog.html">BLOG</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">LOJA</a></li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown3" data-bs-toggle="dropdown"
+                role="button" aria-expanded="false">
+                <img src="assets/img/Brazil.svg" alt="Brasil" class="navbar-flag"> Brasil
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Country 1</a></li>
+                <li><a class="dropdown-item" href="#">Country 2</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+        </li>
+    </ul>
+</div>
+</div>
+</nav>
+</header>
+    <!-- Cabeçalho -->
+    <!-- <header class="navbar navbar-expand-lg navbar-light">
+    </header> -->
+
+<!-- Seção: Sobre a Empresa -->
+
+<div class="page-header">
+    <h1>Sobre a Solo Rico</h1>
+</div>
+<div class="container">
+    <h2>Nossa História</h2>
+    <p>A Solo Rico Agrociências tem como objetivo fornecer as melhores soluções agrícolas...</p>
+</div>
+
+<section class="about-section py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Imagem da empresa -->
+            <div class="col-lg-6">
+                <img src="assets/img/about-company.jpg" alt="Sobre a Empresa" class="img-fluid about-image">
+            </div>
+            <!-- Texto da empresa -->
+            <div class="col-lg-6">
+                <h4 class="section-title">Sobre a Solo Rico</h4>
+                <h2 class="section-heading">Nossa História</h2>
+                <p class="section-description">
+                    A Solo Rico Agrociências tem como objetivo fornecer as melhores soluções agrícolas para aumentar a produtividade e a sustentabilidade no campo. 
+                    Com anos de experiência, buscamos inovação e excelência em cada produto e serviço oferecido.
+                </p>
+                <ul class="about-list">
+                    <li><i class="fas fa-check-circle"></i> Tecnologia de ponta para o agro</li>
+                    <li><i class="fas fa-check-circle"></i> Sustentabilidade e responsabilidade ambiental</li>
+                    <li><i class="fas fa-check-circle"></i> Atendimento personalizado aos nossos clientes</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Seção: Missão, Visão e Valores -->
+<section class="mission-vision-values py-5">
+    <div class="container text-center">
+        <h4 class="section-title">Nossos Pilares</h4>
+        <h2 class="section-heading">Missão, Visão e Valores</h2>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="assets/img/mission.png" alt="Missão" class="card-icon">
+                        <h5 class="card-title">Missão</h5>
+                        <p class="card-text">Fornecer soluções agrícolas inovadoras para aumentar a produtividade dos nossos clientes de forma sustentável.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="assets/img/vision.png" alt="Visão" class="card-icon">
+                        <h5 class="card-title">Visão</h5>
+                        <p class="card-text">Ser referência em tecnologia agrícola sustentável, contribuindo para um futuro mais verde.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="assets/img/values.png" alt="Valores" class="card-icon">
+                        <h5 class="card-title">Valores</h5>
+                        <p class="card-text">Compromisso, inovação, sustentabilidade e ética são os pilares da Solo Rico.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Seção: Nossa Equipe -->
+<section class="team-section py-5">
+    <div class="container text-center">
+        <h4 class="section-title">Nosso Time</h4>
+        <h2 class="section-heading">Conheça a Equipe Solo Rico</h2>
+        <div class="row mt-4">
+            <div class="col-md-3">
+                <div class="team-card">
+                    <img src="assets/img/team1.jpg" alt="Equipe 1" class="team-image">
+                    <h5 class="team-name">João Silva</h5>
+                    <p class="team-role">CEO</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="team-card">
+                    <img src="assets/img/team2.jpg" alt="Equipe 2" class="team-image">
+                    <h5 class="team-name">Maria Souza</h5>
+                    <p class="team-role">Diretora de Operações</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="team-card">
+                    <img src="assets/img/team3.jpg" alt="Equipe 3" class="team-image">
+                    <h5 class="team-name">Carlos Santos</h5>
+                    <p class="team-role">Gerente Comercial</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="team-card">
+                    <img src="assets/img/team4.jpg" alt="Equipe 4" class="team-image">
+                    <h5 class="team-name">Ana Pereira</h5>
+                    <p class="team-role">Gestora de Marketing</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer-section py-5">
+        <div class="container">
+            <!-- Logo e Descrição -->
+            <div class="row text-center mb-4">
+                <div class="col-12">
+                    <img src="assets/img/div.elementor-element.png" alt="Logo Solo Rico" class="footer-logo mb-3">
+                    <p class="footer-description mx-auto">
+                        There are many variations of passages of lorem ipsum available, but the majority suffered.
+                        <br> Atendimento a clientes, colaboradores e empresas de segunda a sexta-feira das 09h às 18h
+                        (exceto feriados).
+                    </p>
+                </div>
+            </div>
+
+            <!-- Menus e Informações -->
+            <div class="row">
+                <!-- Menu -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <h5 class="footer-heading">Menu</h5>
+                    <ul class="footer-menu list-unstyled">
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Menu</a></li>
+                    </ul>
+                </div>
+
+                <!-- Blog -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <h5 class="footer-heading">Blog</h5>
+                    <ul class="footer-blog list-unstyled">
+                        <li>
+                            <a href="#">Lorem Food Production Back To Cities</a>
+                            <span>Jul, 2025</span>
+                        </li>
+                        <li>
+                            <a href="#">Lorem Food Production Back To Cities</a>
+                            <span>Jan, 2025</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Atendimento -->
+                <div class="col-lg-4 col-md-12 col-12">
+                    <h5 class="footer-heading">Atendimento</h5>
+                    <ul class="footer-contact list-unstyled">
+                        <li><i class="fas fa-phone"></i> 555 888 0000</li>
+                        <li><i class="fas fa-envelope"></i> email@solorico.com.br</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Rua Lorem Ipsum, 1234<br>S. J. Rio Preto SP., Brasil
+                        </li>
+                    </ul>
+                    <form class="footer-form mt-3">
+                        <input type="text" class="form-control" placeholder="Dúvidas?">
+                        <button type="submit" class="btn btn-success"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-bottom text-center mt-4">
+                <p>&copy; All Copyright 2025 by Martinha TI</p>
+                <a href="#">Política e Privacidade</a> | <a href="#">Central de Atendimento</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Alterar o cabeçalho ao rolar
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > document.querySelector('.carousel').offsetHeight) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+
+</body>
+
+</html>
