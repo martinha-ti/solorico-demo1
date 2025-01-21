@@ -925,3 +925,95 @@
     }
 }
 
+/* SAC */
+
+/* Cabeçalho da Página (sem fundo verde) */
+.page-header-light {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.page-header-light h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Perguntas Frequentes (FAQ) */
+.accordion-button {
+    background-color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #3b7d1c;
+}
+
+.accordion-button:hover {
+    background-color: #f7f7f7;
+}
+
+.accordion-body {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Seção de Contato */
+.contact-section .section-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #3b7d1c;
+    margin-bottom: 20px;
+}
+
+.contact-info li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info i {
+    color: #3b7d1c;
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+/* Formulário de Contato */
+.form-control {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.form-control:focus {
+    border-color: #3b7d1c;
+    box-shadow: 0 0 5px rgba(59, 125, 28, 0.5);
+}
+
+/* Botão */
+.btn-success {
+    background-color: #3b7d1c;
+    border: none;
+    font-size: 1.2rem;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #2a5c10;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .contact-info li {
+        font-size: 1rem;
+    }
+
+    .accordion-button {
+        font-size: 1rem;
+    }
+}
+
+
